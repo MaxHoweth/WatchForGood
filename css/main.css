@@ -286,7 +286,7 @@ mark {
 }
 
 hr {
-  border: solid #FAC9B8;
+  border: solid #EC368D;
   border-width: 1px 0 0;
   margin-bottom: 2.4rem;
 
@@ -520,7 +520,7 @@ td:last-child {
   right: 100%;
   height: 100%;
   width: 100%;
-  background: #FAC9B8;
+  background: #EC368D;
 }
 
 .pace.pace-inactive {
@@ -1282,11 +1282,11 @@ h1.intro-header {
 
 #header-nav-wrap .header-main-nav li a:hover,
 #header-nav-wrap .header-main-nav li a:focus {
-  color: #FAC9B8;
+  color: #EC368D;
 }
 
 #header-nav-wrap .header-main-nav li.current a {
-  color: #FAC9B8;
+  color: #EC368D;
 }
 
 #header-nav-wrap .cta {
@@ -1846,7 +1846,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 .about-features .feature .icon i {
-  color: #FAC9B8;
+  color: #EC368D;
   font-size: 4.8rem;
 }
 
@@ -1928,7 +1928,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   line-height: 54px;
   text-align: center;
   border-radius: 50%;
-  background-color: #FAC9B8;
+  background-color: #EC368D;
   box-shadow: 0 0 0 15px #ffffff;
   z-index: 500;
   position: absolute;
@@ -2088,7 +2088,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   padding: 2rem 1rem 0rem;
   margin-bottom: 1rem;
   outline: solid;
-  outline-color: #FAC9B8
+  outline-color: #EC368D
 }
 
 .pricing-table .plan-block:after {
@@ -2470,7 +2470,6 @@ companyIn@media only screen and (max-width: 600px) {
 .companyInfoTitle{
   font-size: 3.4rem;
   line-height:1.324;
-  padding-bottom: 9rem;
 }
 
 
@@ -2705,17 +2704,12 @@ footer ul a:visited {
 
 .footer-logo {
   display: block;
-  margin: 0 0 5.4rem 0;
+  margin: 0 0 1.5rem 0;
   padding: 0;
   outline: 0;
   border: none;
-  width: 93px;
-  height: 21px;
-  background: url("../images/logo.png") no-repeat center;
-  background-size: 93px 21px;
-  font: 0/0 a;
-  text-shadow: none;
-  color: transparent;
+  width: 200px;
+  height: 200px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
