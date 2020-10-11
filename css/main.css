@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
   color: #151515;
   font-style: normal;
   text-rendering: optimizeLegibility;
-  margin-bottom: 2.4rem;
+
 }
 
 h3, .h03, h4, .h04 {
@@ -286,8 +286,9 @@ mark {
 }
 
 hr {
-  border: solid rgba(0, 0, 0, 0.1);
+  border: solid #FAC9B8;
   border-width: 1px 0 0;
+  margin-bottom: 2.4rem;
 
   height: 0;
 }
@@ -1076,7 +1077,6 @@ h1.intro-header {
   line-height: 1.324;
   color: #151515;
   position: relative;
-  padding-bottom: 3rem;
 
   text-align: center;
 }
@@ -1438,7 +1438,7 @@ h1.intro-header {
 .home-content-left {
   padding: 15rem 0 12rem 40px;
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .home-content-left h3 {
@@ -1698,7 +1698,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 @media only screen and (max-width: 1024px) {
   .home-content-left {
-    width: 60%;
+    width: 100%;
     padding: 18rem 6rem 12rem 4rem;
   }
   .home-content-left h3 {
@@ -2071,7 +2071,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 }
 
 #pricing h1 {
-  margin-bottom: 3.6rem;
+
 }
 
 .pricing-intro {
@@ -2435,7 +2435,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   }
 }
 
-@media only screen and (max-width: 600px) {
+companyIn@media only screen and (max-width: 600px) {
   #trending .owl-wrap {
     width: 90%;
   }
@@ -2464,11 +2464,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
    min-height: 600px;
  }
  #companyInfoContent {
-   text-align: center;
-   padding: 0rem 10rem 0rem;
-   font-size: 2rem;
-
-   min-height: 350px;
 
  }
 
@@ -2476,7 +2471,6 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   font-size: 3.4rem;
   line-height:1.324;
   padding-bottom: 9rem;
-
 }
 
 
@@ -2514,6 +2508,38 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
    border: 1px solid black;
    display: none;
  }
+
+ @media only screen and (max-width: 1024px) {
+   #companyInfoContent {
+        font-size: 2rem;
+        min-height: 350px;
+        text-align: center;
+   }
+ }
+
+ @media only screen and (max-width: 768px) {
+
+
+ }
+
+ @media only screen and (max-width: 600px) {
+
+ }
+
+ @media only screen and (max-width: 400px) {
+
+ }
+
+
+
+
+
+
+
+
+
+
+
 
  /*
       CUSTOM FOCUS AREAS
