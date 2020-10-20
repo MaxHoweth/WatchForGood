@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "watchforgood-d5c2a"
+    "default": "watchforgood-d5c2a",
+    "main": "watchforgood2"
   }
 }

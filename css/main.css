@@ -1146,8 +1146,8 @@ h1.intro-header {
 
 .header-logo img {
   display: block;
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   position: center;
   color: transparent;
   -webkit-transition: all 0.5s ease-in-out;
@@ -1834,7 +1834,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 #about {
   min-height: 786px;
   background: #ffffff;
-  padding-top: 18rem;
+  padding-top: 13rem;
   overflow: hidden;
 }
 
@@ -2080,8 +2080,8 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #pricing {
   background: #ebebeb;
-  padding-top: 15rem;
-  padding-bottom: 12rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
 }
 
 #pricing h1 {
@@ -2098,11 +2098,11 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .pricing-table .plan-block {
   background: #ffffff;
-  border-radius: 5px;
   padding: 2rem 1rem 0rem;
   margin-bottom: 1rem;
+
   outline: solid;
-  outline-color: #EC368D
+  outline-color: #EC368D;
 }
 
 .pricing-table .plan-block:after {
@@ -2122,7 +2122,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   font-size: 5rem;
   color: #111111;
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 .pricing-table .plan-block .plan-block-price sup {
@@ -2155,7 +2155,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 
 .pricing-table .plan-block.primary {
-  background: #FAC9B8;
+  background: #EC368D;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -2418,7 +2418,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #trending-slider .owl-dots .owl-dot.active span,
 #trending-slider .owl-dots .owl-dot:hover span {
-  background-color: #39b54a;
+  background-color: #EC368D;
 }
 
 
@@ -2472,13 +2472,13 @@ companyIn@media only screen and (max-width: 600px) {
  *
  * ------------------------------------------------------------------- */
  #companyInfo {
-   background: #ebebeb;;
-   padding: 15rem 0 3rem;
+   background: #ebebeb;
+   padding: 10rem 0 3rem;
    text-align: center;
    min-height: 600px;
  }
  #companyInfoContent {
-
+   min-height: 200px;
  }
 
 .companyInfoTitle{
@@ -2499,6 +2499,11 @@ companyIn@media only screen and (max-width: 600px) {
     outline:none;
     background-repeat:no-repeat;
     background: Transparent no-repeat;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height:35px;
+    line-height: 35px;
  }
  .companyInfoButton:hover {
     background-color: Transparent;
@@ -2520,27 +2525,35 @@ companyIn@media only screen and (max-width: 600px) {
  .companyInfoUnderline{
    border: 1px solid black;
    display: none;
+   width:40%;
+   margin-bottom: 10px;
  }
 
  @media only screen and (max-width: 1024px) {
    #companyInfoContent {
         font-size: 2rem;
-        min-height: 350px;
-        text-align: center;
    }
  }
 
  @media only screen and (max-width: 768px) {
-
+   #companyInfoContent {
+        font-size: 1.8rem;
+   }
 
  }
 
  @media only screen and (max-width: 600px) {
-
+   #companyInfoContent {
+        font-size: 1.6rem;
+   }
  }
 
  @media only screen and (max-width: 400px) {
-
+   @media only screen and (max-width: 600px) {
+     #companyInfoContent {
+          font-size: 1.4rem;
+     }
+   }
  }
 
 
@@ -2558,6 +2571,29 @@ companyIn@media only screen and (max-width: 600px) {
       CUSTOM FOCUS AREAS
  */
 
+
+#areasOfFocus {
+  text-align: left;
+  font-size:2rem;
+  line-height:1.75;
+  color:#151515;
+  font-family: "montserrat-regular", sans-serif;
+  font-weight:bold;
+}
+
+@media only screen and (max-width: 600px) {
+  #areasOfFocus {
+    font-size:1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #areasOfFocus {
+    font-size:1.2rem;
+  }
+}
+
+
  #focusAreas {
    background: #FFFFFF;
    padding: 15rem 0 3rem;
@@ -2574,6 +2610,92 @@ companyIn@media only screen and (max-width: 600px) {
    padding: 15rem 0 3rem;
    min-height: 800px;
  }
+
+ #faqWrapper {
+   
+ }
+
+ .faqMainButton {
+   background-color: Transparent;
+   border: none;
+   cursor:pointer;
+   outline:none;
+   background-repeat:no-repeat;
+   background: Transparent no-repeat;
+   margin-left: 0;
+   padding-left: 0;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-size: 2.5rem;
+ }
+ .faqMainButton:hover {
+   background-color: Transparent;
+   border: none;
+   cursor:pointer;
+   outline:none;
+   background-repeat:no-repeat;
+   background: Transparent no-repeat;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-size: 2.5rem;
+ }
+ .faqMainButton:focus {
+   background-color: Transparent;
+   border: none;
+   cursor:pointer;
+   outline:none;
+   background-repeat:no-repeat;
+   background: Transparent no-repeat;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   font-size: 2.5rem;
+ }
+
+
+ .faqText {
+   padding-left: 6rem;
+
+ }
+ .faqSpanButton{
+   background-color: Transparent;
+   border: none;
+   cursor:pointer;
+   outline:none;
+   background-repeat:no-repeat;
+   background: Transparent no-repeat;
+   font-size: 5rem;
+   font-weight:bold;
+   vertical-align:middle;
+   width: 2rem;
+
+ }
+ .faqSpanButton:hover{
+   background-color: Transparent;
+   border: none;
+   cursor:pointer;
+   outline:none;
+   background-repeat:no-repeat;
+   background: Transparent no-repeat;
+   font-size: 5rem;
+   font-weight:bold;
+   vertical-align:middle;
+   width: 2rem;
+
+ }
+ .faqSpanButton:focus{
+   background-color: Transparent;
+   border: none;
+   cursor:pointer;
+   outline:none;
+   background-repeat:no-repeat;
+   background: Transparent no-repeat;
+   font-size: 5rem;
+   font-weight:bold;
+   vertical-align:middle;
+   width: 2rem;
+
+ }
+
 
 
 
