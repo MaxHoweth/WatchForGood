@@ -16,8 +16,7 @@
 
     <!-- mobile specific metas
    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- CSS
    ================================================== -->
     <link rel="stylesheet" href="css/base.css">
@@ -75,13 +74,14 @@
         <div class="home-content">
 
             <div class="row contents">
-                <div class="home-content-left" data-aos="fade-up">
+                <div class="home-content-left" data-aos="fade-up" >
 
-                    <h3 >Watch For Good</h3>
+                    <h3 style="text-align: right;" >Watch For Good</h3>
 
-                    <h1>
-                        A Fundraising Platform And Marketplace <br>
-                        For Today's Social Conscious Consumer
+                    <h1 style="text-align: right;" >
+                        A Fundraising Platform And<br>
+                        Marketplace For Today's<br>
+                        Social Conscious Consumer
                     </h1>
 
                 </div>
@@ -105,7 +105,7 @@
             </div>
             <div class="col-eight">
                 <p class="lead" data-aos="fade-up" style="text-align: left">
-                    Watch For Good is a charitable social network and marketplace. Our goal is to increase the corporate social responsibility footprint within the giving community through partnerships and fundraising.
+                    Watch For Good is a charitable social network and marketplace. Our goal is to increase the corporate social responsibility footprint within the giving community through partnerships, fundraising, and advocacy.
                 </p>
             </div>
 
@@ -178,10 +178,10 @@
             </div> <!-- end features-list -->
         </div> <!-- end about-features -->
 
-        <div class="row about-how">
+        <div class="row about-how" style="padding-bottom:5rem">
             <div data-aos="fade-up">
               <h1 class="intro-header">How Our App Works</h1>
-              <hr data-aos="fade-up" style= "border: 2px solid #EC368D; width:200px"></hr>
+              <hr style= "border: 2px solid #EC368D; width:200px"></hr>
               <p style="text-align: left">
                   Watch for Good is a fundraising social network and marketplace. What separates us from other crowdfunding platforms is our hybrid network that allows users to contribute financially by simply watching videos that include advertising. The network requires brands and nonprofits to create their own cause based video campaigns which are monetized through online advertising. We in turn share a portion of the proceeds with the nonprofit organizations
               </p>
@@ -229,16 +229,6 @@
          </div>
         </div> <!-- end about-how -->
 
-        <div class="row about-bottom-image">
-
-           <img src="images/app-screens-1200.png"
-                srcset="images/app-screens-600.png 600w,
-                        images/app-screens-1200.png 1200w,
-                        images/app-screens-2800.png 2800w"
-                sizes="(max-width: 2800px) 100vw, 2800px"
-                alt="App Screenshots" data-aos="fade-up">
-
-        </div>  <!-- end about-bottom-image -->
 
     </section> <!-- end about -->
 
@@ -396,29 +386,30 @@
     </section> <!-- end testimonials -->
 
 
-    <!--CUSTOM COMANYINFO  ========================================== -->
+    <!--CUSTOM COMPANY-INFO  ========================================== -->
 
     <section id="companyInfo">
       <div class="row" data-aos="fade-up">
           <div >
               <h1 class="companyInfoTitle" >Company Info</h1>
-              <hr  style= "border: 2px solid #EC368D; width:200px"></hr>
+              <hr style= "border: 2px solid #EC368D; width:200px"></hr>
           </div>
 
           <div class="col-twelve" >
 
               <div class="col-four" >
-                <button class="companyInfoButton" onclick="onClicked_OurMission()">OUR MISSION</button>
-                <hr id= "ourMissionUnderline" class="companyInfoUnderline" style="display:block"> </hr>
+
+                <button class="companyInfoButton" id="ourMissionButton" style="background:#EC368D">OUR MISSION</button>
+                <hr id= "ourMissionUnderline" class="companyInfoUnderline" > </hr>
               </div>
 
               <div class="col-four" >
-                <button class="companyInfoButton" onclick="onClicked_FounderBio()">FOUNDER BIO</button>
+                <button class="companyInfoButton" id="founderBioButton">FOUNDER BIO</button>
                 <hr id="founderBioUnderline" class="companyInfoUnderline"> </hr>
               </div>
 
               <div class="col-four" >
-                <button class="companyInfoButton" onclick="onClicked_AboutUs()">ABOUT US</button>
+                <button class="companyInfoButton" id="aboutUsButton">ABOUT US</button>
                 <hr id="aboutUsUnderline" class="companyInfoUnderline"> </hr>
               </div>
 
@@ -449,37 +440,6 @@
     </section>
 
 
-    <script>
-        function onClicked_OurMission() {
-            document.getElementById("companyInfoContent").innerHTML = 'Our mission is to use the power of social media to leverage support for nonprofits by bringing innovative ideas to the table through the use of disruptive technology, partnerships with consumer brands while fostering socio-economic responsibility within our communities.';
-            document.getElementById("ourMissionUnderline").style.display  ="block";
-            document.getElementById("founderBioUnderline").style.display ="none";
-            document.getElementById("aboutUsUnderline").style.display    ="none";
-        }
-        function onClicked_FounderBio() {
-            document.getElementById("companyInfoContent").innerHTML = 'Kevin has worked in a variety of disciplines throughout his life, but never found his drive until he focused on giving back. Kevin attributes his passion for charity to his faith and believes whatever your hands find to do, do it with your might! Kevin also understands that behind every good cause there is a melting pot of courageous individuals, dreamers, willing to devote their time and energy to a possibility and understanding. Big ideas tend to challenge the norms of our society and are usually far bigger than a single human effort, it requires citizen participation and the collective ability to color outside the lines of traditional thinking.';
-            document.getElementById("ourMissionUnderline").style.display  ="none";
-            document.getElementById("founderBioUnderline").style.display ="block";
-            document.getElementById("aboutUsUnderline").style.display    ="none";
-        }
-        function onClicked_AboutUs() {
-            document.getElementById("companyInfoContent").innerHTML = 'Watch for Good, is a charitable social network and marketplace. Our goal is to increase the corporate social responsibility footprint within the giving community through partnerships, fundraising, and advocacy. We offer a cause based platform that allows brands and nonprofits organizations to share their political, social, and environmental values with our audience through video. What we do is monetize the content and share a portion of the advertising revenue with the nonprofits every time a video is viewed. Our modern approach to fundraising uses digital advertising in the crowdfunding space by converting viewer impressions into donations. Our cashless method of fundraising allows our users to focus on the cause, leaving them feeling invested while supporting the brands in our marketplace. ';
-            document.getElementById("ourMissionUnderline").style.display  ="none";
-            document.getElementById("founderBioUnderline").style.display ="none";
-            document.getElementById("aboutUsUnderline").style.display    ="block";
-        }
-
-
-
-
-        var video = document.getElementById("videobcg");
-        video.muted = true;
-        video.play();
-
-
-    </script>
-
-
     <!-- END CUSTOM COMPANYINFO -- >
 
     <!-- AREAS OF FOCUS CUSTOM  -->
@@ -499,124 +459,73 @@
     <!-- FAQ CUSTOM
     ================================================== -->
     <section id="faq">
-      <div class ="row" id="faqWrapper">
-        <h1 class="intro-header" data-aos="fade-up">Frequently Asked Questions</h1>
-        <hr data-aos="fade-up" style= "border: 2px solid #EC368D; width:200px"></hr>
+      <div class ="row" id="faqWrapper" data-aos="fade-up">
+        <h1 class="intro-header">Frequently Asked Questions</h1>
+        <hr  style= "border: 2px solid #EC368D; width:200px"></hr>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan0" onclick="onFaqButtonClicked(0)">-</button>
-          <button class = "faqMainButton" id ="faqButton0" onclick="onFaqButtonClicked(0)">Are there any fees for users or non-profits?</button>
+          <h2 class = "faqMainButton" id ="faqButton0"><span class = "faqSpanButton" id ="faqSpan0">+</span>Are there any fees for users or non-profits?</h2>
           <p class = "faqText" id="faqText0">No, our service is completley free for users and non-profits.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan1" onclick="onFaqButtonClicked(1)">-</button>
-          <button class = "faqMainButton" id ="faqButton1" onclick="onFaqButtonClicked(1)">Can nonprofits from outside of North America sign up for the network?</button>
-          <p class = "faqText" id="faqText1">Yes, our platform is available to all nonprofits worldwide.</p>
+          <h2 class = "faqMainButton" id ="faqButton1"><span class = "faqSpanButton" id ="faqSpan1">+</span>Can nonprofits from outside of North America sign up for the network?</h2>
+          <p class = "faqText"  id="faqText1">Yes, our platform is available to all nonprofits worldwide.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan2" onclick="onFaqButtonClicked(2)">-</button>
-          <button class = "faqMainButton" id ="faqButton2" onclick="onFaqButtonClicked(2)">What kind of product donations will be making to the marketplace?</button>
+          <h2 class = "faqMainButton" id ="faqButton2"><span class = "faqSpanButton" id ="faqSpan2">+</span>What kind of product donations will brands be making to the marketplace?</h2>
           <p class = "faqText" id="faqText2">The type of donations is solely up to the sponsor.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan3" onclick="onFaqButtonClicked(3)">-</button>
-          <button class = "faqMainButton" id ="faqButton3" onclick="onFaqButtonClicked(3)">Who pays for the shipping of donations to sponsors?</button>
+          <h2 class = "faqMainButton" id ="faqButton3"><span class = "faqSpanButton" id ="faqSpan3">+</span>Who pays for the shipping of donations to sponsors?</h2>
           <p class = "faqText" id="faqText3">Brand's sponsors will be responsible for shipping donations to users.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan4" onclick="onFaqButtonClicked(4)">-</button>
-          <button class = "faqMainButton" id ="faqButton4" onclick="onFaqButtonClicked(4)">What is a pledge?</button>
+          <h2 class = "faqMainButton" id ="faqButton4"><span class = "faqSpanButton" id ="faqSpan4">+</span>What is a pledge?</h2>
           <p class = "faqText" id="faqText4">A pledge is a gift/donation given by corporate sponsors in support of the contribution made by the user.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan5" onclick="onFaqButtonClicked(5)">-</button>
-          <button class = "faqMainButton" id ="faqButton5" onclick="onFaqButtonClicked(5)">How much revenue will be shared with the nonprofits?</button>
+          <h2 class = "faqMainButton" id ="faqButton5"><span class = "faqSpanButton" id ="faqSpan5">+</span>How much revenue will be shared with the nonprofits?</h2>
           <p class = "faqText" id="faqText5">Nonprofits will recieve 40% of the cost per impression, this is the revenue generated from the monetized videos.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan6" onclick="onFaqButtonClicked(6)">-</button>
-          <button class = "faqMainButton" id ="faqButton6" onclick="onFaqButtonClicked(6)">Can all items in the marketplace be purchased with tokens?</button>
+          <h2 class = "faqMainButton" id ="faqButton6"><span class = "faqSpanButton" id ="faqSpan6">+</span>Can all items in the marketplace be purchased with tokens?</h2>
           <p class = "faqText" id="faqText6">No, only the items earmarked as donations can be purchased with tokens.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan7" onclick="onFaqButtonClicked(7)">-</button>
-          <button class = "faqMainButton" id ="faqButton7" onclick="onFaqButtonClicked(7)">Can subscribers post videos?</button>
+          <h2 class = "faqMainButton" id ="faqButton7"><span class = "faqSpanButton" id ="faqSpan7">+</span>Can subscribers post videos?</h2>
           <p class = "faqText" id="faqText7">No, only nonprofits and brands can post videos.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan8" onclick="onFaqButtonClicked(8)">-</button>
-          <button class = "faqMainButton" id ="faqButton8" onclick="onFaqButtonClicked(8)">Can brands use their own ads?</button>
+          <h2 class = "faqMainButton" id ="faqButton8"><span class = "faqSpanButton" id ="faqSpan8">+</span>Can brands use their own ads?</h2>
           <p class = "faqText" id="faqText8">Yes, through our sponsorship packages brands can create their own ads.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan9" onclick="onFaqButtonClicked(9)">-</button>
-          <button class = "faqMainButton" id ="faqButton9" onclick="onFaqButtonClicked(9)">When brand sponsors create videos where does the money that is raised go?</button>
+          <h2 class = "faqMainButton" id ="faqButton9"><span class = "faqSpanButton" id ="faqSpan9">+</span>When brand sponsors create videos where does the money that is raised go?</h2>
           <p class = "faqText" id="faqText9">Sponsors have two options for the money raised: 1) Donate it to a nonprofit on our platform or 2) Donate it to a cause of their choice.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan10" onclick="onFaqButtonClicked(10)">-</button>
-          <button class = "faqMainButton" id ="faqButton10" onclick="onFaqButtonClicked(10)">What are some ways user can earn tokens?</button>
+          <h2 class = "faqMainButton" id ="faqButton10"><span class = "faqSpanButton" id ="faqSpan10">+</span>What are some ways user can earn tokens?</h2>
           <p class = "faqText" id="faqText10">Users can earn tokens by following different nonprofits and brands, by watching the ad campaigns, by logging in, through purchases, through interaction via comments on posts, by reading posted articles, and connecting with other users.</p>
         </div>
 
         <div class="col">
-          <button class = "faqSpanButton" id ="faqSpan11" onclick="onFaqButtonClicked(11)">-</button>
-          <button class = "faqMainButton" id ="faqButton11" onclick="onFaqButtonClicked(11)">What is a cause based video campaign?</button>
+          <h2 class = "faqMainButton" id ="faqButton11"><span class = "faqSpanButton" id ="faqSpan11">+</span>What is a cause based video campaign?</h2>
           <p class = "faqText" id="faqText11">A cause based video campaign is a campaign aimed at educating and shedding light on a particular cause.</p>
         </div>
 
-
       </div>
 
-
-
     </section>
-    <script>
-
-    var buttonStates = [false,false,false,false,false,false,false,false,false,false,false,false];
-
-    // Make Sure To Call The Function 1 Time For Each Element To Set The Initial State
-    onFaqButtonClicked(0);     onFaqButtonClicked(1);
-    onFaqButtonClicked(2);     onFaqButtonClicked(3);
-    onFaqButtonClicked(4);     onFaqButtonClicked(5);
-    onFaqButtonClicked(6);     onFaqButtonClicked(7);
-    onFaqButtonClicked(8);     onFaqButtonClicked(9);
-    onFaqButtonClicked(10);    onFaqButtonClicked(11);
-
-
-    function onFaqButtonClicked(num) {
-      if(buttonStates[num] == true) {
-        document.getElementById("faqText" + num).style.display = "block";
-        document.getElementById("faqSpan" + num).innerHTML = "-";
-        buttonStates[num] = !buttonStates[num];
-      }
-      else {
-        document.getElementById("faqText" + num).style.display ="none";
-        document.getElementById("faqSpan" + num).innerHTML = "+";
-        buttonStates[num] = !buttonStates[num];
-      }
-    }
-
-
-
-
-
-
-
-    </script>
-
-
-
 
     <!-- footer
     ================================================== -->
@@ -637,7 +546,7 @@
 
                     <ul class="footer-social-list">
                         <li>
-                            <a href="#"><i class="fa fa-facebook-square"></i></a>
+                            <a href="https://www.facebook.com/watchforgood/"><i class="fa fa-facebook-square"></i></a>
                         </li>
                         <li>
                             <a href="https://twitter.com/WatchforGood_"><i class="fa fa-twitter"></i></a>
@@ -688,7 +597,7 @@
 
                     <h4>Our Newsletter</h4>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>If you are interested in Watch For Good and our mission, please subscribe to our mailing list below:</p>
 
                     <div class="subscribe-form">
 

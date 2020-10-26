@@ -74,6 +74,10 @@ body {
   color: #767676;
   margin: 0;
   padding: 0;
+
+
+  overflow-x: hidden;
+  width: 100%;
 }
 
 
@@ -2080,7 +2084,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #pricing {
   background: #ebebeb;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
@@ -2137,6 +2141,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   margin-bottom: 0;
   font-family: "montserrat-medium", sans-serif;
   font-size: 1.7rem;
+  color:#000000;
 }
 
 .pricing-table .plan-block .plan-block-features {
@@ -2156,7 +2161,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 .pricing-table .plan-block.primary {
   background: #EC368D;
-  color: rgba(255, 255, 255, 0.8);
+
 }
 
 .pricing-table .plan-block.primary .plan-block-price {
@@ -2264,7 +2269,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 
 #trending {
   background: #FFFFFF;
-  padding: 15rem 0 9rem;
+  padding: 15rem 0 5rem;
   text-align: center;
   min-height: 600px;
 }
@@ -2504,6 +2509,8 @@ companyIn@media only screen and (max-width: 600px) {
     padding-bottom: 0;
     height:35px;
     line-height: 35px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
  }
  .companyInfoButton:hover {
     background-color: Transparent;
@@ -2512,6 +2519,8 @@ companyIn@media only screen and (max-width: 600px) {
     outline:none;
     background-repeat:no-repeat;
     background: Transparent no-repeat;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
  }
  .companyInfoButton:focus{
     background-color: Transparent;
@@ -2520,14 +2529,17 @@ companyIn@media only screen and (max-width: 600px) {
     outline:none;
     background-repeat:no-repeat;
     background: Transparent no-repeat;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
  }
 
  .companyInfoUnderline{
    border: 1px solid black;
    display: none;
-   width:40%;
    margin-bottom: 10px;
+   margin:auto;
  }
+
 
  @media only screen and (max-width: 1024px) {
    #companyInfoContent {
@@ -2549,10 +2561,9 @@ companyIn@media only screen and (max-width: 600px) {
  }
 
  @media only screen and (max-width: 400px) {
-   @media only screen and (max-width: 600px) {
      #companyInfoContent {
           font-size: 1.4rem;
-     }
+
    }
  }
 
@@ -2574,30 +2585,12 @@ companyIn@media only screen and (max-width: 600px) {
 
 #areasOfFocus {
   text-align: left;
-  font-size:2rem;
-  line-height:1.75;
-  color:#151515;
-  font-family: "montserrat-regular", sans-serif;
-  font-weight:bold;
 }
-
-@media only screen and (max-width: 600px) {
-  #areasOfFocus {
-    font-size:1.5rem;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  #areasOfFocus {
-    font-size:1.2rem;
-  }
-}
-
 
  #focusAreas {
    background: #FFFFFF;
    padding: 15rem 0 3rem;
-   min-height: 500px;
+   min-height: 200px;
  }
 
 
@@ -2612,40 +2605,11 @@ companyIn@media only screen and (max-width: 600px) {
  }
 
  #faqWrapper {
-   
+
  }
 
  .faqMainButton {
-   background-color: Transparent;
-   border: none;
    cursor:pointer;
-   outline:none;
-   background-repeat:no-repeat;
-   background: Transparent no-repeat;
-   margin-left: 0;
-   padding-left: 0;
-   margin-top: 15px;
-   margin-bottom: 15px;
-   font-size: 2.5rem;
- }
- .faqMainButton:hover {
-   background-color: Transparent;
-   border: none;
-   cursor:pointer;
-   outline:none;
-   background-repeat:no-repeat;
-   background: Transparent no-repeat;
-   margin-top: 15px;
-   margin-bottom: 15px;
-   font-size: 2.5rem;
- }
- .faqMainButton:focus {
-   background-color: Transparent;
-   border: none;
-   cursor:pointer;
-   outline:none;
-   background-repeat:no-repeat;
-   background: Transparent no-repeat;
    margin-top: 15px;
    margin-bottom: 15px;
    font-size: 2.5rem;
@@ -2653,50 +2617,65 @@ companyIn@media only screen and (max-width: 600px) {
 
 
  .faqText {
-   padding-left: 6rem;
+   padding-left: 5rem;
+   display:none;
 
  }
+
+
  .faqSpanButton{
-   background-color: Transparent;
-   border: none;
    cursor:pointer;
-   outline:none;
-   background-repeat:no-repeat;
-   background: Transparent no-repeat;
+
    font-size: 5rem;
    font-weight:bold;
    vertical-align:middle;
    width: 2rem;
-
- }
- .faqSpanButton:hover{
-   background-color: Transparent;
-   border: none;
-   cursor:pointer;
-   outline:none;
-   background-repeat:no-repeat;
-   background: Transparent no-repeat;
-   font-size: 5rem;
-   font-weight:bold;
-   vertical-align:middle;
-   width: 2rem;
-
- }
- .faqSpanButton:focus{
-   background-color: Transparent;
-   border: none;
-   cursor:pointer;
-   outline:none;
-   background-repeat:no-repeat;
-   background: Transparent no-repeat;
-   font-size: 5rem;
-   font-weight:bold;
-   vertical-align:middle;
-   width: 2rem;
-
+   padding-right: 10px;
  }
 
 
+ @media only screen and (max-width: 768px) {
+   .faqMainButton {
+     font-size: 2rem;
+   }
+
+   .faqSpanButton{
+     font-size: 3.8rem;
+     width: 1.5rem;
+
+   }
+ }
+
+ @media only screen and (max-width: 600px) {
+   .faqMainButton {
+     font-size: 1.6rem;
+   }
+
+   .faqSpanButton{
+     font-size: 2.8rem;
+     width: 1.2rem;
+
+   }
+   .faqText {
+     padding-left: 2rem;
+   }
+ }
+
+ @media only screen and (max-width: 400px) {
+   .faqMainButton {
+     font-size: 1.3rem;
+   }
+
+   .faqSpanButton{
+     font-size: 2.4rem;
+     width: 1rem;
+
+   }
+   .faqText {
+     padding-left: 0rem;
+   }
+
+ }
 
 
 
