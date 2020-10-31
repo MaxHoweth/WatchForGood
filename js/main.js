@@ -71,8 +71,8 @@
 	* ------------------------------------------------------ */
 
 	document.getElementById("ourMissionButton").addEventListener("click", function(){
-			document.getElementById("companyInfoContent").innerHTML = 'Our mission is to use the power of social media to leverage support for nonprofits by bringing innovative ideas to the table through the use of disruptive technology, partnerships with consumer brands while fostering socio-economic responsibility within our communities.';
-			document.getElementById("ourMissionButton").style.background  ="#EC368D";
+			document.getElementById("companyInfoContent").innerHTML = 'Our mission is to use the power of social media to financial leverage support for nonprofits by bringing innovative ideas to the table through the use of disruptive technology, sponsorships with consumer brands while fostering socio-economic responsibility within our communities.';
+			document.getElementById("ourMissionButton").style.background  ="#D3D3D3";
 			document.getElementById("founderBioButton").style.background  ="Transparent";
 			document.getElementById("aboutUsButton").style.background     ="Transparent";
 	});
@@ -80,15 +80,15 @@
 	document.getElementById("founderBioButton").addEventListener("click", function(){
 			document.getElementById("companyInfoContent").innerHTML = 'Kevin has worked in a variety of disciplines throughout his life, but never found his drive until he focused on giving back. Kevin attributes his passion for charity to his faith and believes whatever your hands find to do, do it with your might! Kevin also understands that behind every good cause there is a melting pot of courageous individuals, dreamers, willing to devote their time and energy to a possibility and understanding. Big ideas tend to challenge the norms of our society and are usually far bigger than a single human effort, it requires citizen participation and the collective ability to color outside the lines of traditional thinking.';
 			document.getElementById("ourMissionButton").style.background  ="Transparent";
-			document.getElementById("founderBioButton").style.background  ="#EC368D";
+			document.getElementById("founderBioButton").style.background  ="#D3D3D3";
 			document.getElementById("aboutUsButton").style.background     ="Transparent";
 	});
 
 	document.getElementById("aboutUsButton").addEventListener("click", function(){
-			document.getElementById("companyInfoContent").innerHTML = 'Watch for Good, is a charitable social network and marketplace. Our goal is to increase the corporate social responsibility footprint within the giving community through partnerships, fundraising, and advocacy. We offer a cause based platform that allows brands and nonprofits organizations to share their political, social, and environmental values with our audience through video. What we do is monetize the content and share a portion of the advertising revenue with the nonprofits every time a video is viewed. Our modern approach to fundraising uses digital advertising in the crowdfunding space by converting viewer impressions into donations. Our cashless method of fundraising allows our users to focus on the cause, leaving them feeling invested while supporting the brands in our marketplace. ';
+			document.getElementById("companyInfoContent").innerHTML = 'Watch for Good, is a charitable social network and marketplace. Our goal is to increase the corporate social responsibility footprint within the giving community through partnerships, fundraising, advocacy, and commerce. We offer a cause based platform that allows brands and nonprofits organizations to share their political, social, and environmental values with our audience through video. What we do is monetize the content and share a portion of the advertising revenue with the nonprofits every time a video is viewed. Our modern approach to fundraising uses digital advertising in the crowdfunding space by converting viewer impressions into donations. Our cashless method of fundraising allows our users to focus on the cause, leaving them feeling invested while supporting the brands in our marketplace.';
 			document.getElementById("ourMissionButton").style.background ="Transparent";
 			document.getElementById("founderBioButton").style.background  ="Transparent";
-			document.getElementById("aboutUsButton").style.background     ="#EC368D";
+			document.getElementById("aboutUsButton").style.background     ="#D3D3D3";
 	});
 
 	/* CUSTOM HOME VIDEO BACKGROUND AUTOPLAY

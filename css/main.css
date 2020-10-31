@@ -1748,7 +1748,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
   .home-content-left {
     width: 94%;
     position: static;
-    padding: 15rem 6rem 366px;
+    padding: 32rem 6rem 366px;
     margin: 0 auto;
   }
   .home-content-left h1 {
@@ -1771,21 +1771,27 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
 @media only screen and (max-width: 768px) {
   #home {
     min-height: auto;
+
   }
   .home-content-left h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   .home-content-left h1 {
-    font-size: 3.6rem;
+    font-size: 3.3rem;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .home-content-left {
-    padding: 12rem 6rem 366px;
+    padding: 32rem 6rem 366px;
+
   }
   .home-content-left h1 {
-    font-size: 3.3rem;
+    font-size: 3rem;
+  }
+
+  .home-content-left h3 {
+    font-size: 1.2rem;
   }
   .home-content-left .button.stroke {
     width: 100%;
@@ -1793,7 +1799,7 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     max-width: 280px;
   }
   .home-social-list {
-    font-size: 2rem;
+    font-size: 1.8rem;
     right: 30px;
   }
   .scroll-icon {
@@ -1807,17 +1813,20 @@ html[data-useragent*='MSIE 10.0'] .home-scrolldown,
     display: none;
   }
   .home-content-left {
-    padding: 12rem 2.5rem 366px;
+    padding: 32rem 2.5rem 366px;
     width: 100%;
   }
   .home-content-left h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
+  }
+  .home-content-left h3 {
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .home-content-left {
-    padding: 12rem 0 300px;
+    padding: 32rem 0 300px;
   }
   .home-content-left .button.stroke {
     margin: 0 0 1.2rem 0;
@@ -2482,6 +2491,10 @@ companyIn@media only screen and (max-width: 600px) {
    text-align: center;
    min-height: 600px;
  }
+ #companyInfoHeadings {
+   padding-bottom: 4rem;
+
+ }
  #companyInfoContent {
    min-height: 200px;
  }
@@ -2585,6 +2598,7 @@ companyIn@media only screen and (max-width: 600px) {
 
 #areasOfFocus {
   text-align: left;
+
 }
 
  #focusAreas {
